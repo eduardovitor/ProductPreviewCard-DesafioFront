@@ -1,21 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 ul {
     list-style-type: none;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+
 .container {
     display: flex;
-    width: 50%;
-    padding: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
     margin:auto;
 }
 
+picture {
+    display: flex;
+    flex-direction: column;
+}
+
+picture img {
+    width: 100%;
+    border-radius: 5px 5px;
+}
+
 .perfume_info {
-   border: 2px solid black;
+   border: 5px hidden white;
+   border-radius: 5px;
+   background-color: white;
 }
 
 .perfume_info h2{
     text-align: left;
-    padding: 15px;
+    padding-top: none;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
     margin-left: 7%;
     color: hsl(228, 12%, 48%);
     letter-spacing: 0.8rem;
@@ -25,15 +50,15 @@ ul {
 .perfume_info h1{
     text-align: left;
     color: hsl(212, 21%, 14%);
-    padding: 15px;
+    padding: 5%;
     margin-left: 7%;
-    font-size: 60px;
+    font-size: 2rem;
     margin-right: 10%;
 }
 
 .perfume_info p {
-    padding: 15px;
-    font-size: 35px;
+    padding: 5%;
+    font-size: 1.5rem;
     color: hsl(228, 12%, 48%);
     margin-left: 7%;
     margin-right: 10%;
@@ -43,16 +68,18 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    margin-left: 20px;
+    margin-left: 2%;
+    font-family: "Fraunces", sans-serif;
 }
 
 .perfume_price li:first-child {
-    font-size: 70px;
+    font-size: 3rem;
     color: hsl(158, 36%, 37%);
 }
 
 .perfume_price li {
-    font-size: 30px;
+    font-size: 1.5rem;
+    margin-right: 25px;
 }
 
 
@@ -61,17 +88,29 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 25px;
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: center;
     color: #fff;
     width:80%;
     height: 10%;
     background-color: hsl(158, 36%, 37%);
-    margin-left: 45px;
-    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 20px;
 }
 
 .perfume_button img {
     width: 8%;
+}
+
+@media (min-width: 640px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    picture img {
+        height: 113vh;
+    }
 }
